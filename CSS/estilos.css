@@ -1,0 +1,199 @@
+html{    font-size: 62,5%;
+}
+h1{
+    color:rgb(63, 63, 247);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+}
+h2{
+    color:rgb(63, 63, 247);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+}
+h3{
+    color:rgb(63, 63, 247);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: bold;
+    text-align: left;
+}
+
+.grillaGeneral{    /*grid para las paginas*/
+    display: grid;
+    grid-template-columns:auto ;
+    grid-template-rows:auto;
+    grid-template-areas:
+    "header header"
+    "main main"
+    "galeria galeria"
+    "footer footer";
+}
+
+/*clases*/
+
+.header{
+    grid-area:header;
+}
+.main{
+    grid-area: main;
+}
+.video{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    justify-items:center;
+}
+/*menu*/
+.menuPrincipal{
+    background-color:aqua;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly; 
+    justify-items: center;
+}
+.menuPrincipal ul{
+    list-style-type: none;
+}
+.menuPrincipal ul li{
+    display: inline-block;
+    padding: 20px 20px;
+}
+ol{      /*formularios*/
+    display: flex;
+    list-style: none;
+    line-height: normal;
+}
+a{
+    text-decoration: none;
+    color:rgb(63, 63, 247);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0,5rem;
+    font-weight:400;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    background-color: aquamarine;
+    margin:1rem; 
+}
+/*iconos redes*/
+.iconoWhatsap{
+    background-repeat: no-repeat;
+    background-position: right center; 
+    width: 2rem; 
+    height:2rem;
+}
+.iconoInstagram{
+    background-repeat: no-repeat;
+    background-position: right center; 
+    width: 2rem; 
+    height:2rem;
+
+}
+.pieDePagina__titulo{  /*footer*/
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    color:rgb(63, 63, 247);
+    grid-area: footer;
+}
+.pieDePagina__titulo--derechos{ /*derechos reservados en el footer*/
+    font-size: 0,5rem;
+}
+
+ .imagenMedicoPaciente{  /* imagen del header*/
+    width: 97rem; 
+    height:50rem ;
+}
+.cajaOverflow{ /*caja de noticias para scrollear*/
+    width: 250px;
+    height: 120px;
+    background-color: #9816f3;
+    overflow: auto; 
+    border: solid 1px black;
+    padding: 1px;
+}
+.redesFlotantes{ /*redes flotantes*/
+    position: fixed;
+    right: 0;
+    bottom: 50%;
+}
+.redesFlotantes img{ /*redes flotantes*/
+    width: 50px;
+    display: block;
+}
+.cajaImagen{     /*galeria*/
+    width:8rem ;
+    height:8rem ;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    grid-area: galeria;
+}
+.logo{       /*logo pie de pagina*/
+    width:7rem ;
+    height:7rem ;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start; 
+
+}
+.logoHeader{       /*logo header*/
+    width:10rem ;
+    height:10rem ;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;  
+}
+
+/* tablet 768px */
+
+ @media screen and (max-width:768px) {
+    .grillaGeneral{
+        grid-template-columns:1fr ;
+        grid-template-rows:4fr;}
+    .imagenMedicoPaciente{  /* imagen del header*/
+        width: 46rem; 
+        height:25rem ;
+    }
+    .cajaImagen{    /*galeria*/
+        width:4rem ;
+        height:4rem ;
+    }
+    .redesFlotantes{  /*redes flotantes*/
+        display: none;
+    }
+    .redesFlotantes img{  /*redes flotantes*/
+        display:none;
+    }
+ } 
+ /* mobile 500px */
+  @media screen and (max-width:500px){
+    .grillaGeneral{
+        grid-template-columns:1fr ;
+        grid-template-rows:4fr;}
+    .imagenMedicoPaciente{  /* imagen del header*/
+        width: 46rem; 
+        height:25rem ;
+    }
+    .cajaImagen{    /*galeria*/
+        width:4rem ;
+        height:4rem ;
+    }
+    .redesFlotantes{  /*redes flotantes*/
+        display: none;
+    }
+    .redesFlotantes img{  /*redes flotantes*/
+        display:none;
+    }
+    .video{       /*video*/
+        display:none;
+    }
+} 

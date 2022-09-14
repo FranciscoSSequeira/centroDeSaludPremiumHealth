@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Salud Premium Health</title>
+    <link rel="shortcut icon" href="../multimedia/premiumHealth_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/estilos.css">
+</head>
+
+<body class="grillaGeneral">
+
+        <header class="header">
+            <a href="#final">Llevame al final de esta pagina</a>
+
+            <div class="logoHeader"><img src="../multimedia/premiumHealth_logo.png" alt="premiumHealth_logo"></div>  <!--logo header--> 
+            
+            <nav class="menuPrincipal"> <!--menu--> 
+                <ul>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="turnos.html">Turnos</a></li>
+                <li><a href="../index.html">Inicio</a></li>
+                </ul>
+            </nav>
+            
+            <h1 id="arriba">Contacto</h1> <!--titulo--> 
+    
+            <img class="imagenMedicoPaciente" src="../multimedia/img_medico_paciente.png" alt="Imagen medico paciente" title="medico paciente"> <!--imagen header--> 
+
+        </header>
+
+        <main class="main">
+
+            <h2>Donde estamos</h2> <!--mapa--> 
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.016887889484!2d-58.38375908459182!3d-34.60373446500628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1661611035316!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       
+            <h3>Nos interesa estar cerca tuyo</h3>
+        
+            <ol>
+                <fieldset> <!--formulario--> 
+                    <legend>Dejanos una direccion de mail y un telefono para que un asesor se comunique con vos</legend>
+            
+                    <li><label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre"></li> 
+        
+                    <li><label for="direccion">Direccion:</label>
+                    <input type="text" name="direccion"></li> 
+        
+                    <li><label for="numero">Telefono:</label>
+                    <input type="numer" name="numero"></li>
+            
+                    <li><label for="nacionalidad"> nacionalidad</label>
+                        <select name="nacionalidad">
+                            <option value="argentina">argentina</option>
+                            <option value="brasil">brasil</option>
+                            <option value="uruguay">uruguay</option>
+                        </select>
+                    </li>
+
+                    <li>
+                        <label for="genero">Genero:</label>
+                        <input type="radio" value="M" name="genero"> M
+                        <input type="radio" value="F" name="genero"> F
+                        <input type="radio" value="NE" name="genero"> NE  
+                    </li>    
+        
+                    <li><label for="datos">Podemos enviarte informacion y promociones?</label></li>
+                    <li><input type="checkbox" value="1" name="datos"> Acepto mails.</li>
+                    <li><input type="checkbox" value="2" name="datos"> Acepto sms.</li>
+                    <li><input type="checkbox" value="3" name="datos"> Acepto llamados telefonicos.</li>
+            
+                    <input type="submit" value="Envia este formulario"> 
+
+                    <input type="reset" value="Borrar">                    
+    
+                </fieldset>
+            </ol>
+     
+            <section class="cajaImagen"> <!--galeria--> 
+
+                <img src="../multimedia/imagen_medicos.jpg" alt="imagenMedicos">
+                <img src="../multimedia/imagen_medicos_tecnologia.jpg" alt="imagenMedicosTecnologia">
+                <img src="../multimedia/imagen_medico_estetoscopio.jpg" alt="imagenMedicoEstetoscopio">
+                <img src="../multimedia/imagen_grupo_medicos.jpg" alt="imagenGrupoMedicos">
+                <img src="../multimedia/imagen_medica_pulgar.jpg" alt="imagenMedicaPulgar">
+                <img src="../multimedia/imagen_cirujanos.jpg" alt="imagenCirujanos">
+                <img src="../multimedia/imagen_medicos_hospital.jpg" alt="imagenMedicosHospital">
+        
+            </section>
+
+        </main> 
+
+        <footer class="pieDePagina__titulo">
+            <div><img class="iconoWhatsap" src="../multimedia/icono_wsp.jpg" alt="iconoWhatsap"title="iconoWhatsap"></div> <!--redes--> 
+            <div><img class="iconoInstagram"src="../multimedia/icono_instagram.jpg" alt="iconoInstagram"title="iconoInstagram"></div>
+            <div class="logo"><img src="../multimedia/premiumHealth_logo.png" alt="premiumHealth_logo"></div> <!--logo--> 
+            <div><p class="pieDePagina__titulo--derechos">Derechos reservados Centro de Salud Premium Health</p></div> <!--derechos--> 
+            <div class="redesFlotantes"> <!--redes flotantes--> 
+                <img src="../multimedia/icono_wsp.jpg" alt="iconoWhatsap">
+                <img src="../multimedia/icono_instagram.jpg" alt="iconoInstagram">
+            </div>
+            <h4 id="final">FINAL DE PAGINA</h4>
+            <a href="#arriba">Volver arriba</a>
+       
+        </footer>
+
+</body>
+
+</html>
