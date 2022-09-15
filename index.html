@@ -10,6 +10,11 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="CSS/estilos.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">        <!--link animacion scroll-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>                  <!--link animacion scroll-->
+        <link rel="stylesheet"    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />      <!--link animacion animate css-->
+
+
     
     </head>
     <body class="grillaGeneral">
@@ -36,9 +41,13 @@
         
             <main class="main">
                     <h2 class="tituloSegundo">Pagina principal</h2> 
-                <div class="video"> <!--videos--> 
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Vg5sfCX8B8I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/3-18pPudCxM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                <div data-aos="flip-up"
+                data-aos-duration="3000">  <!--animacion del video-->
+                    <div class="video">                                <!--video--> 
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Vg5sfCX8B8I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/3-18pPudCxM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
                 </div>        
 
                 <section class="texto">
@@ -58,11 +67,15 @@
                 <section>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati error quas quisquam, hic quaerat eligendi vero porro minima veniam officiis qui quasi numquam, doloremque nostrum iure labore ea omnis beatae.
                 </section>
+                
+                <div data-aos="zoom-in"
+                data-aos-duration="3000">   <!--animacion scroll-->
+                    <section class="cajaOverflow">  <!--Noticias--> 
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias rerum numquam repellat unde temporibus autem expedita ipsam provident inventore aspernatur cupiditate debitis ea reiciendis rem sequi, recusandae placeat explicabo dignissimos.</p>
+                    </section>
 
-                <section class="cajaOverflow">  <!--Noticias--> 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias rerum numquam repellat unde temporibus autem expedita ipsam provident inventore aspernatur cupiditate debitis ea reiciendis rem sequi, recusandae placeat explicabo dignissimos.</p>
-                </section> 
-
+                </div>
+            
                 <section class="cajaImagen">  <!--galeria pie de pagina--> 
 
                     <img src="multimedia/imagen_medicos.jpg" alt="imagenMedicos">
@@ -81,7 +94,11 @@
                 <div><img class="iconoWhatsap" src="multimedia/icono_wsp.jpg" alt="iconoWhatsap"title="iconoWhatsap"></div>  <!--iconos redes--> 
                 <div><img class="iconoInstagram"src="multimedia/icono_instagram.jpg" alt="iconoInstagram"title="iconoInstagram"></div>
                 <div class="logo"><img src="multimedia/premiumHealth_logo.png" alt="premiumHealth_logo"></div>
-                <div><p class="pieDePagina__titulo--derechos">Derechos reservados Centro de Salud Premium Health</p></div>  <!--derechos--> 
+                
+                <div class="animate__animated animate__bounce ">      <!--animacion animate css en derechos reservados. No se percibe el cambio.-->
+                    <div><p class="pieDePagina__titulo--derechos">Derechos reservados Centro de Salud Premium Health</p></div>  <!--derechos--> 
+                </div>
+                
                 <div class="redesFlotantes">  <!--redes flotantes--> 
                     <img src="multimedia/icono_wsp.jpg" alt="iconoWhatsap">
                     <img src="multimedia/icono_instagram.jpg" alt="iconoInstagram">
@@ -90,6 +107,10 @@
                 <a href="#arriba">Volver arriba</a> 
 
             </footer>
+                <!--animacion scroll-->
+            <script>   
+                AOS.init();
+            </script>
         
     </body>
 
