@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Centro de Salud Premium Health</title>
     <link rel="shortcut icon" href="../multimedia/premiumHealth_logo.png" type="image/x-icon">
+     <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/estilos.css">
 
     </head>
@@ -14,23 +16,37 @@
         <header class="header">
             <a href="#final">Llevame al final de esta pagina</a>
         
-            <div class="logoHeader"><img src="../multimedia/premiumHealth_logo.png" alt="premiumHealth_logo"></div>  <!--logo--> 
-            
-            <nav class="menuPrincipal">  <!--menu--> 
-                <ul>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="turnos.html">Turnos</a></li>
-                <li><a href="../index.html">Inicio</a></li>
-                </ul>
+            <nav class="navbar navbar-expand-lg navbar-light bg-colorMenu">      <!--navbar bootstrap-->
+                <a class="navbar-brand" href="#"> <img class="logo" src="../multimedia/premiumHealth_logo.png" alt="premiumHealth_logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">Inicio <span class="sr-only"></span></a>  
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="turnos.html">Turnos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                  </ul>
+                </div>
             </nav>
-            
+        
             <h1 id="arriba">Nosotros</h1>  <!--titulo--> 
             
             <img class="imagenMedicoPaciente" src="../multimedia/img_medico_paciente.png" alt="Imagen medico paciente" title="medico paciente">  <!--imagen header--> 
 
         </header>   
         <main class="main">
+
+            <img src="../multimedia/imagen_aparatos.jpg" alt="..." class="img-rounded">
 
             <section>
 
@@ -92,6 +108,10 @@
 
             <h3 id="final">FINAL DE PAGINA</h3>
             <a href="#arriba">Volver arriba</a>
+        
         </footer>
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  
     </body>
 </html>
