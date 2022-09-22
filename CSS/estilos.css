@@ -178,7 +178,8 @@ body{
 .cajaOverflow{ /*caja de noticias para scrollear*/
     width: 250px;
     height: 120px;
-    background-color: #9816f3;
+    background-color:rgb(63, 63, 247);
+    color:aquamarine;
     overflow: auto; 
     border: solid 1px black;
     padding: 1px;
