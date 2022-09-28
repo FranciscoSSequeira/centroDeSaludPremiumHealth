@@ -1,0 +1,10 @@
+.grillaGeneral{    /*grid para las paginas*/
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "header header"
+    "main main"
+    "galeria galeria"
+    "footer footer";
+}

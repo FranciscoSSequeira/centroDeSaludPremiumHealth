@@ -1,0 +1,180 @@
+@import "variables";
+@import "titulos";
+@import "menu";
+@import "botones";
+@import "grilla";
+@import "index";
+
+html{    font-size: 62,5%;
+}
+.grillaTurnos{   /*grid Pagina Turnos*/
+    display: grid;
+    grid-template-columns: 2fr ;
+    grid-template-rows: 2fr;
+    grid-template-areas:
+    "imagen tituloTurnos"
+    "forms forms"
+}
+.header{       
+    grid-area:header;
+}
+.main{
+    grid-area: main;
+}
+.video{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    justify-items:center;
+}
+ol{      /*formularios*/
+    display: flex;
+    list-style: none;
+    line-height: normal;
+}
+a{
+    text-decoration: none; 
+    color:rgb(63, 63, 247);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0,5rem;
+    font-weight:400; 
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: black; 
+    background-color: aquamarine;
+    margin:1rem;  
+}
+/*iconos redes*/
+.iconoWhatsap{
+    background-repeat: no-repeat;
+    background-position: right center; 
+    width: 2rem; 
+    height:2rem;
+}
+.iconoInstagram{
+    background-repeat: no-repeat;
+    background-position: right center; 
+    width: 2rem; 
+    height:2rem;
+
+}
+.pieDePagina__titulo{  /*footer*/
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    color:rgb(63, 63, 247);
+    grid-area: footer;
+}
+.pieDePagina__titulo--derechos{ /*derechos reservados en el footer*/
+    font-size: 0,5rem;
+}
+
+ .imagenMedicoPaciente{  /* imagen del header*/
+    width: 100%;
+    height:70% ;
+}
+.imagen_computadora{      /*imagen computadora Turnos*/
+    grid-area: imagen;
+}
+.forms{       /*forms Turnos*/
+    grid-area: forms;
+}
+
+.tituloTurnos{       /*titulo Turnos*/
+    grid-area: tituloTurnos;
+    display: flex;
+    align-items: center;
+}
+.redesFlotantes{ /*redes flotantes*/
+    position: fixed;
+    right: 0;
+    bottom: 50%;
+}
+.redesFlotantes img{ /*redes flotantes*/
+    width: 50px;
+    display: block;
+}
+.cajaImagen{     /*galeria*/
+    width:8rem ;
+    height:8rem ;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;  
+    grid-area: galeria;
+}
+.logo{       /*logo pie de pagina*/
+    width:7rem ;
+    height:7rem ;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start; 
+
+}
+.logoHeader{       /*logo header*/
+    width:10rem ;
+    height:10rem ;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;  
+}
+
+/* tablet 768px */
+
+ @media screen and (max-width:768px) {
+    .grillaGeneral{
+        grid-template-columns:1fr ;
+        grid-template-rows:4fr;}
+    .imagenMedicoPaciente{  /* imagen del header*/
+        width: 100%; 
+        height: 70% ;
+    }
+    .cajaImagen{    /*galeria*/
+        width:4rem ;
+        height:4rem ;
+    }
+    .redesFlotantes{  /*redes flotantes*/
+        display: none;
+    }
+    .redesFlotantes img{  /*redes flotantes*/
+        display:none;
+    }
+    .imagen_computadora{   /*imagen computadora Turnos*/
+        display:none;    
+    }
+
+ } 
+ /* mobile 500px */
+  @media screen and (max-width:500px){
+    .grillaGeneral{
+        grid-template-columns:1fr ;
+        grid-template-rows:4fr;
+    }
+    .noticias{     /*grid para noticias*/
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 3fr;
+        grid-template-areas:
+        "noticias"
+        "noticias"
+        "noticias"
+    }
+    .imagenMedicoPaciente{  /* imagen del header*/
+        width: 100%; 
+        height: auto ;
+    }
+    .cajaImagen{    /*galeria*/
+       display: none;
+    }
+    .redesFlotantes{  /*redes flotantes*/
+        display: none;
+    }
+    .redesFlotantes img{  /*redes flotantes*/
+        display:none;
+    }
+    .video{       /*video*/
+        display:none;
+    }
+    iframe{       /*iframe*/
+        width:auto;
+    } 
+} 
