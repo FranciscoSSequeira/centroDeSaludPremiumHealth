@@ -1,3 +1,20 @@
+.btn-primarybotonAzul {
+  background-color: #3f3ff7; }
+
+.btn-primarybotonAqua {
+  background-color: linear-gradient(aquamarine, aqua); }
+
+/*iconos redes*/
+.iconoWhatsap, .iconoInstagram {
+  background-repeat: no-repeat;
+  background-position: right center;
+  width: 2rem;
+  height: 2rem; }
+
+.titulos {
+  font-style: normal;
+  font-weight: bold; }
+
 h1 {
   color: #3f3ff7;
   font-family: "Montserrat", sans-serif;
@@ -31,10 +48,9 @@ h3 {
 .btn-primary {
   /*cmabio color botones contacto y turnos de forms*/
   --bs-btn-bg:rgb(63, 63, 247); }
-
-.btn-primaryInicioFinal {
-  /*cmabio color botones llevame al inicio de pagina*/
-  background-image: linear-gradient(aquamarine, aqua); }
+  .btn-primaryInicioFinal {
+    /*cmabio color botones llevame al inicio de pagina*/
+    background-image: linear-gradient(aquamarine, aqua); }
 
 .grillaGeneral {
   /*grid para las paginas*/
@@ -54,15 +70,28 @@ h3 {
     justify-content: space-around;
     padding: 5rem; }
 
-.card-title {
+.card-noticias {
   /*underline animado de noticias*/
   background-image: linear-gradient(120deg, #ec008c, #fc6767 100%);
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
   background-position: 0 50%;
   transition: background-size 0.25s ease-in; }
-  .card-title:hover {
+  .card-noticias:hover {
     background-size: 100% 88%; }
+
+.pieDePagina__titulo {
+  /*footer*/
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #3f3ff7;
+  grid-area: footer; }
+  .pieDePagina__titulopieDePagina__tituloderechos--derechos {
+    /*derechos reservados en el footer*/
+    font-size: 0,5rem; }
+
+.card_footer {
+  background-color: aqua; }
 
 html {
   font-size: 62,5%; }
@@ -104,19 +133,6 @@ body {
   color: black;
   background-color: aquamarine;
   margin: 1rem; }
-
-/*iconos redes*/
-.iconoWhatsap {
-  background-repeat: no-repeat;
-  background-position: right center;
-  width: 2rem;
-  height: 2rem; }
-
-.iconoInstagram {
-  background-repeat: no-repeat;
-  background-position: right center;
-  width: 2rem;
-  height: 2rem; }
 
 .pieDePagina__titulo {
   /*footer*/
@@ -161,18 +177,20 @@ body {
 
 .cajaImagen {
   /*galeria*/
-  width: 8rem;
+  width: 100%;
   height: 8rem;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   grid-area: galeria; }
 
+/*map get estilo display de logo*/
 .logo {
   /*logo pie de pagina*/
   width: 7rem;
   height: 7rem;
   display: flex;
+  /*map get*/
   flex-direction: row;
   justify-content: flex-start; }
 

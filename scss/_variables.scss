@@ -1,2 +1,29 @@
 $fuente: 'Montserrat', sans-serif;
 $color: rgb(63, 63, 247);
+$botones:(
+    botonAzul:rgb(63, 63, 247), 
+    botonAqua:linear-gradient(aquamarine,aqua)
+);
+@each $boton, $color in $botones{
+        .btn-primary#{$boton}{
+        background-color: $color;
+    }
+} 
+/*iconos redes*/
+.iconoWhatsap{
+    background-repeat: no-repeat;
+    background-position: right center; 
+    width: 2rem; 
+    height:2rem;
+}
+.iconoInstagram{
+    @extend .iconoWhatsap;
+}
+
+@mixin font($estilo,$peso) {
+    font-style: $estilo;
+    font-weight: $peso;    
+}
+.titulos{
+    @include font(normal,bold);
+}

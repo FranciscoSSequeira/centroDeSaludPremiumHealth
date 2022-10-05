@@ -4,6 +4,7 @@
 @import "botones";
 @import "grilla";
 @import "index";
+@import "footer";
 
 html{    font-size: 62,5%;
 }
@@ -45,20 +46,6 @@ body{
     background-color: aquamarine;
     margin:1rem;  
 }
-/*iconos redes*/
-.iconoWhatsap{
-    background-repeat: no-repeat;
-    background-position: right center; 
-    width: 2rem; 
-    height:2rem;
-}
-.iconoInstagram{
-    background-repeat: no-repeat;
-    background-position: right center; 
-    width: 2rem; 
-    height:2rem;
-
-}
 .pieDePagina__titulo{  /*footer*/
     font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
@@ -95,27 +82,33 @@ body{
     display: block;
 }
 .cajaImagen{     /*galeria*/
-    width:8rem ;
+    width:100% ;
     height:8rem ;
     display: flex;
     flex-direction: row;
     justify-content:flex-start;  
     grid-area: galeria;
 }
+/*map get estilo display de logo*/
+$estiloLogo:(
+    display: flex,
+    flex-direction: row,
+    justify-content:flex-start
+);
+
 .logo{       /*logo pie de pagina*/
     width:7rem ;
     height:7rem ;
-    display: flex;
-    flex-direction: row;
-    justify-content:flex-start; 
-
+    display: map-get($estiloLogo, display);      /*map get*/
+    flex-direction: map-get($estiloLogo, flex-direction );
+    justify-content:map-get($estiloLogo, justify-content ); 
 }
 .logoHeader{       /*logo header*/
     width:10rem ;
     height:10rem ;
-    display: flex;
-    flex-direction: row;
-    justify-content:flex-start;  
+    display: map-get($estiloLogo, display);
+    flex-direction: map-get($estiloLogo, flex-direction );
+    justify-content:map-get($estiloLogo, justify-content );  
 }
 
 /* tablet 768px */

@@ -1,6 +1,6 @@
 .btn-primary{           /*cmabio color botones contacto y turnos de forms*/
-    --bs-btn-bg:rgb(63, 63, 247); ;
-}
-.btn-primaryInicioFinal{           /*cmabio color botones llevame al inicio de pagina*/
+    --bs-btn-bg:rgb(63, 63, 247); 
+    &InicioFinal{           /*cmabio color botones llevame al inicio de pagina*/
     background-image: linear-gradient(aquamarine,aqua); 
+}
 }
