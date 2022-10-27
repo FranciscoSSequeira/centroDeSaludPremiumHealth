@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=devicef.width, initial-scale=1.0">
         <title>Centro de Salud Premium Health</title>
         <meta name="description" content="turnos para la atención en centro de salud Premium Health">
-        <meta name="keywords" content="salud,turnos,health">  <!--keywords-->
+        <meta name="keywords" content="salud, turnos, médico, health, atención medica, asistencia, disponibilidad de turnos">  <!--keywords-->
         <link rel="shortcut icon" href="../multimedia/premiumHealth_logo.png" type="image/x-icon">
          <!-- CSS only -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
@@ -19,7 +19,7 @@
 
             <nav class="navbar navbar-expand-lg bg-colorMenu">       <!--NavBar-->
               <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img class="logo" src="../multimedia/premiumHealth_logo.png" alt="premiumHealth_logo"></a></a>
+                <a class="navbar-brand" href="../index.html"><img class="logo" src="../multimedia/premiumHealth_logo.png" alt="premiumHealth_logo"></a></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -43,111 +43,149 @@
             </nav>
             
             <h1>Turnos</h1>  <!--titulo--> 
-                    
-            <img class="imagenMedicoPaciente" src="../multimedia/img_medico_paciente.png" alt="Imagen medico paciente" title="medico paciente"> <!--imagen header--> 
+
+              <!--card header  -->
+            <section class="row justify-content-center">
+              <div class="card mb-3" style="max-width: 1000px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="../multimedia/video_turnos.gif" class="img-fluid rounded-start" alt="video_turnos">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <p class="card-text">En el Centro de Salud Premium Health queremos brindarte la mejor atención. </p>
+                      <p class="card-text"><small class="text-muted">Salud al alcance tuyo</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </section> 
 
         </header>
         
         <main class="main">
 
-          <div class="grillaTurnos">
+              <!-- titulo con icono -->
+              <div class="grillaTituloIcono">
+                <h2 class="titulo">Aqui vas a poder sacar todos tus turnos</h2>
+                <div class="icono">
+                <img src="../multimedia/icono_atencion-medica.png" alt="icono_atencion-medica">
+                <img src="../multimedia/icono_calendario_salud.png" alt="icono_calendario_salud">
+                <img src="../multimedia/icono_pedido_atencion.png" alt="icono_pedido_atencion">
+                </div>
+             </div>
+          
+              <section class="grillaCardsTurnos">
 
-            <img class="imagen_computadora" src="../multimedia/imagen_computadora.jpg" alt="imagen_computadora">
-            <h2 class="tituloTurnos">Aqui vas a poder sacar todos tus turnos</h2>
-            
-            <div class="forms">
-              <h3>Como sacar los turnos</h3>
-            <ol type=""> 
-                <li>1 paso</li>
-                <li>2 paso</li>
-                <li>3 paso</li>
-            </ol>
-
-            <ol>
-                <form action="">  <!--formularios--> 
-
-                <li><label for="nombre">Nombre:</label>
-                <input type="text" name="nombre"> </li>
-        
-                <li><label for="numero_socio">Numero de Socio</label>
-                <input type="text" name="numero_socio"></li>
-
-                <li><label for="edad">Edad</label>
-                <input type="text" name="edad"></li>
-
-                <div class="form-check">     <!--forms bootstrap-->
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                    <label class="form-check-label" for="exampleRadios1">
-                        Masculino
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                    <label class="form-check-label" for="exampleRadios2">
-                        Femenino
-                    </label>
-                  </div>
-                  <div class="form-check disabled">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                    <label class="form-check-label" for="exampleRadios3">
-                        NE
-                    </label>
-                  </div>
-        
-                <li><label for="especialidad"> Que especialidad buscabas?</label>
-                 <select name="especialidad">
-                         <option value="clinico">clinico</option>
-                         <option value="odontologo">odontologo</option>
-                            <option value="traumatologo">traumatologo</option>
-                            <option value="psicologia">psicologia</option>
-                            <option value="infanto">infanto</option>
-                  </select></li>
-
-                  <li><label for="centro"> centro de atencion elegida</label>
-                  <select name="centro">
-                          <option value="centro">centro Avellaneda</option>
-                          <option value="centro">centro Recoleta</option>
-                          <option value="centro">centro San Isidro</option>
-
-                        </select></li>
-
-                        <fieldset>
-                            <legend>Dejanos una direccion de mail y un telefono para poder enviarte el horario de tu turno</legend>
-                
-                            <li><label for="direccion">Direccion:</label>
-                            <input type="text" name="direccion"></li>
+                <div class="grillaCard">       <!--cards con formularios para turnos-->
+                  <!-- primera card -->
+                  <div class="card" style="width: 18rem;">  
+                    
+                        <img src="../multimedia/icono_forms_turnos.png" class="card-img-top" alt="...">
+                     
+                      <div class="card-body">
+                        <h5 class="card-grillaCard">Sacar turnos</h5>
+                        <p class="card-text"><ol class="forms">
+                          <form action="">  <!--formulario--> 
+      
+                          <li><label for="nombre">Nombre:</label>
+                          <input type="text" name="nombre"> </li>
                  
+                          <li><label for="numero_socio">Numero de Socio</label>
+                          <input type="text" name="numero_socio"></li>
+      
+                          <li><label for="edad">Edad</label>
+                          <input type="text" name="edad"></li>
+      
+                          <div class="form-check">     <!--forms bootstrap-->
+                              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                              <label class="form-check-label" for="exampleRadios1">
+                                  Masculino
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                              <label class="form-check-label" for="exampleRadios2">
+                                  Femenino
+                              </label>
+                            </div>
+                            <div class="form-check disabled">
+                              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                              <label class="form-check-label" for="exampleRadios3">
+                                  NE
+                              </label>
+                            </div>
+                            <li><label for="especialidad"> Que especialidad buscabas?</label>
+                              <select name="especialidad">
+                                      <option value="clinico">clinico</option>
+                                      <option value="odontologo">odontologo</option>
+                                          <option value="traumatologo">traumatologo</option>
+                                          <option value="psicologia">psicologia</option>
+                                          <option value="infanto">infanto</option>
+                                </select></li>
+          
+                                <li><label for="centro"> centro de atencion elegida</label>
+                                <select name="centro">
+                                        <option value="centro">centro Avellaneda</option>
+                                        <option value="centro">centro Recoleta</option>
+                                        <option value="centro">centro San Isidro</option>
+          
+                                        <input class="btn btn-primary" type="submit" value="Solicitar turno"> 
+          
+                                      </select></li>
+                                      <p class="card-text"><small class="text-muted">Centro de Salud Premium Health</small></p>
+                        </p>
+                      </div>
+                    </div>
+                  <!-- segunda card -->
+                  <div class="card" style="width: 18rem;">
+                      <img src="../multimedia/icono_mail_turnos.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-grillaCard">Dejanos una direccion de mail y un telefono para poder enviarte el horario de tu turno</h5>
+                        <p class="card-text">
+                          <li><label for="direccion">Direccion:</label>
+                            <input type="text" name="direccion"></li>
+                
                             <li><label for="numero">Telefono:</label>
                             <input type="numer" name="numero"></li>
-                 
-                        <label for="datos">Podemos enviarte informacion y promociones?</label>
-                        <li><input type="checkbox" value="1" name="datos"> Acepto mails.</li>
-                        <li><input type="checkbox" value="2" name="datos"> Acepto sms.</li>
-                        <li><input type="checkbox" value="3" name="datos"> Acepto llamados telefonicos.</li> 
                   
-                        <input class="btn btn-primary" type="submit" value="Envia este formulario">   <!--boton bootstrap-->
-
-                        <input class="btn btn-primary" type="reset" value="Borrar">
+                        <input class="btn btn-primary" type="submit" value="Envia este formulario">   
+    
+                         <input class="btn btn-primary" type="reset" value="Borrar">
                 
-                            </fieldset>
-            </ol> 
-          </div>
+                            </fieldset></p>
+                          <p class="card-text"><small class="text-muted">Centro de Salud Premium Health</small></p>
+                        </p>
+                      </div>
+                    </div>
+            <!-- tercera card -->
+                  <div class="card" style="width: 18rem;">
+                      <img src="../multimedia/icono_promociones.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-grillaCard">Podemos enviarte informacion y promociones?</h5>
+                        <p class="card-text">  
+
+                          <label for="datos">Podemos enviarte informacion y promociones?</label>
+                          <li><input type="checkbox" value="1" name="datos"> Acepto mails.</li>
+                          <li><input type="checkbox" value="2" name="datos"> Acepto sms.</li>
+                          <li><input type="checkbox" value="3" name="datos"> Acepto llamados telefonicos.</li> 
+                    
+                          <input class="btn btn-primary" type="submit" value="Envia este formulario">   
+  
+                          <input class="btn btn-primary" type="reset" value="Borrar"></p>
+                        <p class="card-text"><small class="text-muted">Centro de Salud Premium Health</small></p></p>
+                      </div>
+                    </div>
+
+                </div>
+ 
+              </section>
+            </div>
           </div>                
-       
-
-            <section class="cajaImagen">  <!--galeria--> 
-
-                <img src="../multimedia/imagen_medicos.jpg" alt="imagenMedicos">
-                <img src="../multimedia/imagen_medicos_tecnologia.jpg" alt="imagenMedicosTecnologia">
-                <img src="../multimedia/imagen_medico_estetoscopio.jpg" alt="imagenMedicoEstetoscopio">
-                <img src="../multimedia/imagen_grupo_medicos.jpg" alt="imagenGrupoMedicos">
-                <img src="../multimedia/imagen_medica_pulgar.jpg" alt="imagenMedicaPulgar">
-                <img src="../multimedia/imagen_cirujanos.jpg" alt="imagenCirujanos">
-                <img src="../multimedia/imagen_medicos_hospital.jpg" alt="imagenMedicosHospital">
-            
-            </section>
+      
         </main>
 
+          <!-- footer -->
         <footer  class="pieDePagina__titulo">
           <div class="card_footer">
             <div class="card-header">
@@ -156,8 +194,7 @@
             <div class="card-body">
               <h5 class="card-title">Centro de Salud Premium Health</h5>
               <p class="card-text">Derechos reservados Centro de Salud Premium Health</p>
-              <a href="#arriba" > <input class="btn btn-primaryInicioFinal" type="submit" value="Volver arriba"> </a> <!-- class="btn btn-primary">Go somewhere</a> -->
-            </div>
+              <a href="#arriba" > <input class="btn btn-primaryInicioFinal" type="submit" value="Volver arriba"> </a> 
           </div>
           <div class="redesFlotantes">  <!--redes flotantes--> 
             <img src="../multimedia/icono_wsp.jpg" alt="iconoWhatsap">

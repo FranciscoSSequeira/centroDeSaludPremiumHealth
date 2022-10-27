@@ -1,0 +1,20 @@
+.grillaCard {
+    /*grid para cards*/
+    display: grid;
+    grid-template-columns: 33.3%;
+    grid-template-rows: 3fr;
+    grid-template-areas: "card card card"; }
+    .grillaCard {
+      display: flex;
+      justify-content: space-around;
+      padding: 5rem; }
+  
+  .card-grillaCard {
+    /*underline animado de cards*/
+    background-image: linear-gradient(120deg, #ec008c, #fc6767 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 50%;
+    transition: background-size 0.25s ease-in; }
+    .card-grillaCard:hover {
+      background-size: 100% 88%; }

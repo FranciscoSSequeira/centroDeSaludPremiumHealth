@@ -1,5 +1,5 @@
 .btn-primarybotonAzul {
-  background-color: #3f3ff7; }
+  background-color: #1313f5; }
 
 .btn-primarybotonAqua {
   background-color: linear-gradient(aquamarine, aqua); }
@@ -16,7 +16,7 @@
   font-weight: bold; }
 
 h1 {
-  color: #3f3ff7;
+  color: #1313f5;
   font-family: "Montserrat", sans-serif;
   font-size: 4rem;
   font-style: normal;
@@ -25,7 +25,7 @@ h1 {
   text-align: center; }
 
 h2 {
-  color: #3f3ff7;
+  color: #1313f5;
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   font-style: normal;
@@ -33,7 +33,7 @@ h2 {
   text-align: center; }
 
 h3 {
-  color: #3f3ff7;
+  color: #1313f5;
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   font-style: normal;
@@ -47,7 +47,7 @@ h3 {
 
 .btn-primary {
   /*cmabio color botones contacto y turnos de forms*/
-  --bs-btn-bg:rgb(63, 63, 247); }
+  --bs-btn-bg:#1313f5; }
   .btn-primaryInicioFinal {
     /*cmabio color botones llevame al inicio de pagina*/
     background-image: linear-gradient(aquamarine, aqua); }
@@ -59,32 +59,47 @@ h3 {
   grid-template-rows: 1fr;
   grid-template-areas: "header header" "main main" "galeria galeria" "footer footer"; }
 
-.noticias {
+.grillaMainGaleria {
+  display: grid;
+  grid-template-columns: 3fr;
+  grid-template-rows: 3fr;
+  justify-content: space-evenly;
+  justify-items: center;
+  padding: 5%; }
+
+.grillaTituloIcono {
+  display: grid;
+  grid-template-columns: 2 fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "titulo icono";
+  padding: 2%; }
+
+.grillaCard {
   /*grid para noticias*/
   display: grid;
   grid-template-columns: 33.3%;
   grid-template-rows: 3fr;
-  grid-template-areas: "noticias noticias noticias"; }
-  .noticias {
+  grid-template-areas: "card card card"; }
+  .grillaCard {
     display: flex;
     justify-content: space-around;
     padding: 5rem; }
 
-.card-noticias {
+.card-grillaCard {
   /*underline animado de noticias*/
   background-image: linear-gradient(120deg, #ec008c, #fc6767 100%);
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
   background-position: 0 50%;
   transition: background-size 0.25s ease-in; }
-  .card-noticias:hover {
+  .card-grillaCard:hover {
     background-size: 100% 88%; }
 
 .pieDePagina__titulo {
   /*footer*/
   font-size: 1rem;
   font-family: 'Montserrat', sans-serif;
-  color: #3f3ff7;
+  color: #1313f5;
   grid-area: footer; }
   .pieDePagina__titulopieDePagina__tituloderechos--derechos {
     /*derechos reservados en el footer*/
@@ -93,15 +108,62 @@ h3 {
 .card_footer {
   background-color: aqua; }
 
+.icono {
+  display: flex;
+  justify-content: space-evenly; }
+  .icono :hover {
+    translate: 2px; }
+
+.card-nosotros {
+  padding: 2%; }
+
+.mapa {
+  padding: 5%; }
+
+.card-contacto {
+  background-color: aqua;
+  padding: 2%;
+  margin: 2%; }
+  .card-contacto :hover {
+    translate: 2px; }
+
+.card :hover {
+  translate: 2px; }
+
+.cajaImagen {
+  /*galeria*/
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  grid-area: galeria; }
+
+.grillaCard {
+  /*grid para cards*/
+  display: grid;
+  grid-template-columns: 33.3%;
+  grid-template-rows: 3fr;
+  grid-template-areas: "card card card"; }
+
+.grillaCard {
+  display: flex;
+  justify-content: space-around;
+  padding: 5rem; }
+
+.card-grillaCard {
+  /*underline animado de cards*/
+  background-image: linear-gradient(120deg, #ec008c, #fc6767 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 50%;
+  transition: background-size 0.25s ease-in; }
+
+.card-grillaCard:hover {
+  background-size: 100% 88%; }
+
 html {
   font-size: 62,5%; }
-
-.grillaTurnos {
-  /*grid Pagina Turnos*/
-  display: grid;
-  grid-template-columns: 2fr;
-  grid-template-rows: 2fr;
-  grid-template-areas: "imagen tituloTurnos" "forms forms"; }
 
 .header {
   grid-area: header; }
@@ -113,7 +175,8 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  justify-items: center; }
+  justify-items: center;
+  padding: 5%; }
 
 ol {
   /*formularios*/
@@ -123,7 +186,7 @@ ol {
 
 a {
   text-decoration: none;
-  color: #3f3ff7;
+  color: #1313f5;
   font-family: 'Montserrat', sans-serif;
   font-size: 0,5rem;
   font-weight: 400; }
@@ -138,7 +201,7 @@ body {
   /*footer*/
   font-size: 1rem;
   font-family: 'Montserrat', sans-serif;
-  color: #3f3ff7;
+  color: #1313f5;
   grid-area: footer; }
 
 .pieDePagina__titulo--derechos {
@@ -150,19 +213,10 @@ body {
   width: 100%;
   height: 70%; }
 
-.imagen_computadora {
-  /*imagen computadora Turnos*/
-  grid-area: imagen; }
-
-.forms {
-  /*forms Turnos*/
-  grid-area: forms; }
-
-.tituloTurnos {
-  /*titulo Turnos*/
-  grid-area: tituloTurnos;
-  display: flex;
-  align-items: center; }
+.imagenCarusel {
+  /*imagen carusel*/
+  width: 50%;
+  height: 50%; }
 
 .redesFlotantes {
   /*redes flotantes*/
@@ -174,15 +228,6 @@ body {
   /*redes flotantes*/
   width: 50px;
   display: block; }
-
-.cajaImagen {
-  /*galeria*/
-  width: 100%;
-  height: 8rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  grid-area: galeria; }
 
 /*map get estilo display de logo*/
 .logo {
@@ -210,32 +255,34 @@ body {
   .imagenMedicoPaciente {
     /* imagen del header*/
     width: 100%;
-    height: 70%; }
+    height: 50%; }
   .cajaImagen {
     /*galeria*/
-    width: 4rem;
-    height: 4rem; }
+    display: none; }
   .redesFlotantes {
     /*redes flotantes*/
     display: none; }
   .redesFlotantes img {
     /*redes flotantes*/
     display: none; }
-  .imagen_computadora {
-    /*imagen computadora Turnos*/
-    display: none; } }
+  .grillaCard {
+    /*grilla de cards*/
+    padding: 0; }
+  .mapa {
+    display: flex; }
+  /* mobile 500px */ }
 
-/* mobile 500px */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) and (max-width: 500px) {
   .grillaGeneral {
     grid-template-columns: 1fr;
-    grid-template-rows: 4fr; }
-  .noticias {
-    /*grid para noticias*/
+    grid-template-rows: 6fr; }
+  .grillaCard {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 3fr;
-    grid-template-areas: "noticias" "noticias" "noticias"; }
+    grid-template-areas: "card" "card" "card"; }
+  .grillaTituloIconoVideo {
+    display: none; }
   .imagenMedicoPaciente {
     /* imagen del header*/
     width: 100%;
@@ -252,6 +299,8 @@ body {
   .video {
     /*video*/
     display: none; }
-  iframe {
+  .iframe {
     /*iframe*/
-    width: auto; } }
+    width: auto; }
+  .icono {
+    display: none; } }

@@ -1,0 +1,7 @@
+.icono{
+    display: flex;
+    justify-content:space-evenly ;
+    & :hover{
+        translate: 2px;
+    }
+}

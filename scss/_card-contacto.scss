@@ -1,0 +1,8 @@
+.card-contacto{
+    background-color: aqua;
+    padding: 2%;
+    margin: 2%;
+    & :hover{
+        translate: 2px;
+    }
+}

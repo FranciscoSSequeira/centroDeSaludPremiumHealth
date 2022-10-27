@@ -8,3 +8,19 @@
     "galeria galeria"
     "footer footer";
 }
+.grillaMainGaleria{
+    display: grid;
+    grid-template-columns: 3fr ;
+    grid-template-rows: 3fr;
+    justify-content: space-evenly;
+    justify-items: center;
+    padding: 5%;
+}
+.grillaTituloIcono{
+    display: grid;
+    grid-template-columns: 2 fr ;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "titulo icono";
+    padding: 2%;
+}

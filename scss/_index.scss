@@ -1,15 +1,15 @@
-.noticias{     /*grid para noticias*/
+.grillaCard{     /*grid para noticias*/
     display: grid;
     grid-template-columns: 33.3% ;
     grid-template-rows: 3fr;
     grid-template-areas:
-    "noticias noticias noticias";
+    "card card card";
     &{
     display:flex;
     justify-content: space-around;
     padding: 5rem;}
 }
-.card-noticias{      /*underline animado de noticias*/
+.card-grillaCard{      /*underline animado de noticias*/
     background-image: linear-gradient(120deg, #ec008c,#fc6767 100%);
     background-repeat: no-repeat;
     background-size: 100% 0.2em;

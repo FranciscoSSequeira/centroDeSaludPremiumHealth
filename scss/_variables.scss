@@ -1,7 +1,7 @@
 $fuente: 'Montserrat', sans-serif;
-$color: rgb(63, 63, 247);
+$color: #1313f5;
 $botones:(
-    botonAzul:rgb(63, 63, 247), 
+    botonAzul:#1313f5, 
     botonAqua:linear-gradient(aquamarine,aqua)
 );
 @each $boton, $color in $botones{
