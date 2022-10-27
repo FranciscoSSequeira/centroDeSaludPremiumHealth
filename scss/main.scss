@@ -163,5 +163,11 @@ $estiloLogo:(
     .icono{
         display: none;
     }
-    
-} }
+} 
+@media screen and (max-width:320px){
+    .mapa{
+        display:flex;
+        padding: 1%;
+    }
+}
+}
